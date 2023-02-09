@@ -1,0 +1,51 @@
+    html{
+      font-family: 'Poppins', sans-serif;
+    }
+    .bg-danger, .btn-danger{
+      background-color: rgb(178, 8, 56) !important;
+    }
+
+    .bg-darked{
+      background-color: rgba(35,40,45,.9607843137254902);
+    }
+
+    .line-break-after::after{
+      content: '';
+      display: block;
+      width: 10%;
+      height: 4px;
+      background-color: rgb(178, 8, 56);
+      margin: 20px auto 0 auto;
+    }
+
+.mt-nsmall {
+    margin-top: -10rem !important;
+}
+
+.mt-nmedium {
+  margin-top: -15rem !important;
+}
+
+.mt-nlarge {
+  margin-top: -20rem !important;
+}
+
+.mt-small {
+  margin-top: 10rem !important;
+}
+
+.mt-medium {
+  margin-top: 15rem !important;
+}
+
+.mt-large {
+  margin-top: 20rem !important;
+}
+
+.mt-xlarge {
+  margin-top: 25rem !important;
+}
+
+.border-top-5{
+  border-top: 5px solid;
+}
