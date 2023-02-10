@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <div class="row align-items-center">
         <div class="col bg-danger vh-100 text-center">
-          <img alt="Vue logo" class="logo img-fluid mx-auto position-relative top-5" src="@/assets/asset/meeting.webp" width="50%" height="50%"/>
+          <img alt="Vue logo" class="logo img-fluid mx-auto position-absolute mt-large" src="@/assets/asset/meeting.webp" width="450" height="450"/>
         </div>
         <div class="col bg-white">
           <div class="card w-75 mx-auto">
@@ -74,11 +74,29 @@ export default {
         const url = "https://dummyjson.com/auth/login";
 
         const data ={
-          username: this.txtEmail,
-          password: this.txtPassword,
+          username: this.txtEmail, //kminchelle
+          password: this.txtPassword, //0lelplR
         }
         this.$axios.post(url, data, config)
-        .then(res => console.log(res))
+        .then((response) => {
+          // this.$swal.showLoading();
+          // localStorage.setItem("username", response.data.username);
+          // this.$router.push({ name: "home" });
+          // this.$swal.close();
+          // return false;
+
+          this.$swal({
+              icon: "success",
+              title: "Welcome",
+              text: "You're Signin",
+            }).then(() => {
+              if (response.data) {
+                localStorage.setItem("username", response.data.username);
+
+                this.$router.push({ name: "home" });
+              }
+            });
+        })
         .catch(err => console.log(err));
         // this.$axios
         //   .request({

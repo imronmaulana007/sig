@@ -42,3 +42,32 @@ import Footers from "../components/dashboard/Footer.vue";
     <TheWelcome />
   </main> -->
 </template>
+
+
+<script>
+import { inject } from "vue";
+// import $ from "jquery";
+
+export default {
+  name: "AuthLogin",
+  // setup() {
+  //   const Vue3GoogleOauth = inject("Vue3GoogleOauth");
+  //   const { locale, t } = useI18n({ inheritLocale: true });
+  //   return { locale, t, Vue3GoogleOauth };
+  // },
+  data: () => ({
+    app_name: "Test",
+    username: ''
+  }),
+  created() {
+    // this.$swal('Hello word!');
+  },
+  mounted() {
+    // this.$swal('Hello word!');
+  },
+
+  methods: {
+    
+  },
+};
+</script>
