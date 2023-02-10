@@ -36,34 +36,20 @@ import Footers from "../components/dashboard/Footer.vue";
     <div class="container-fluid bg-darked py-3">
       <h6 class="text-center text-white">COPYRIGHT © 2023 <a href="" class="text-danger text-decoration-none">PT Sinergi Informatika Semen Indonesia</a>, anak usaha dari PT Semen Indonesia TBK. All rights reserved.</h6>
     </div>
-
   </div>
-  <!-- <main>
-    <TheWelcome />
-  </main> -->
 </template>
 
 
 <script>
 import { inject } from "vue";
-// import $ from "jquery";
 
 export default {
   name: "AuthLogin",
-  // setup() {
-  //   const Vue3GoogleOauth = inject("Vue3GoogleOauth");
-  //   const { locale, t } = useI18n({ inheritLocale: true });
-  //   return { locale, t, Vue3GoogleOauth };
-  // },
   data: () => ({
-    app_name: "Test",
-    username: ''
   }),
   created() {
-    // this.$swal('Hello word!');
   },
   mounted() {
-    // this.$swal('Hello word!');
   },
 
   methods: {
