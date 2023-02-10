@@ -49,3 +49,14 @@
 .border-top-5{
   border-top: 5px solid;
 }
+
+.mobile-view{
+  max-width: 75%;
+  display: block;
+  width: 20%;
+  left: 15%;
+}
+
+.text-responsive{
+  font-size: 1.2rem;
+}

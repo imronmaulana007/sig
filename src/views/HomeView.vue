@@ -27,7 +27,7 @@ import Footers from "../components/dashboard/Footer.vue";
       </div>
     </div>
 
-    <div class="container-fluid bg-dark vh-25">
+    <div class="container-fluid bg-dark vh-30 pb-5">
       <div class="container">
         <Footers />
       </div>
