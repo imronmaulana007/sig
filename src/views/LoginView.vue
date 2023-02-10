@@ -88,7 +88,7 @@ export default {
           this.$swal({
               icon: "success",
               title: "Welcome",
-              text: "You're Signin",
+              text: "You're Signin " + response.data.username,
             }).then(() => {
               if (response.data) {
                 localStorage.setItem("username", response.data.username);
